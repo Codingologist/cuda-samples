@@ -1,6 +1,7 @@
 //nvcc -O2 pointindexing_template.cu -o pointindexing -I /home/microway/cuda-samples/Common/
 //./pointindexing  100 2 
 //./pointindexing  10000000 10  
+// TEST OF THE FILE
 
 #include <helper_functions.h>
 #include <helper_cuda.h>
@@ -206,6 +207,9 @@ int main(int argc, char *argv[])
     cout<<"starting point position in cells:";
     thrust::copy(h_PPos, h_PPos+cell_out, std::ostream_iterator<uint>(std::cout, " "));       
     cout<<endl;
+
+
+    cout<<"THIS IS A TEST?!!?!"
      
      //clean up
     cudaFree(dptr_points);
