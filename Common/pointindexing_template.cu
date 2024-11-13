@@ -209,7 +209,7 @@ int main(int argc, char *argv[])
     cout<<endl;
 
 
-    cout<<"THIS IS A TEST?!!?!"
+    cout<<"THIS IS A TEST?!!?!";
      
      //clean up
     cudaFree(dptr_points);
